@@ -1,0 +1,59 @@
+.hero {
+    height: 700px;
+    position: relative;
+    background-color: $veryPaleCyan;
+    background-image: url('../../images/bg-hero-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column;
+        height: 26.5rem;
+        width: 88%;
+        margin: auto;
+
+        @include breakpoint-up(large) {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-auto-flow: column;
+            height: 26.5rem;
+            width: 88%;
+            margin: auto;
+        }
+    }
+
+    &__text {
+        align-self: center;
+        width: 87%;
+
+        h1 {
+            font-family: $heading-font-family;
+            color: $veryDarkCyan;
+            font-size: 2.4rem;
+            margin: 0px auto;
+        }
+
+        p {
+            line-height: 1.6;
+            color: $veryDarkCyan;
+            margin-bottom: 1.5rem;
+        }
+
+    }
+
+    &__btn {
+        background-color: $pink;
+        padding: 14px 3.9rem;
+        color: white;
+        font-size: 14px;
+        margin: 1% auto;
+    }
+
+    &__image {
+        background-image: url('../../images/illustration-mockups.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-al-c {
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 300ms ease-in-out;
+  font-weight: 700;
+}
+
+.header .nav {
+  padding: 3rem 5rem;
+}
+
+.header .nav__logo img {
+  width: 11.5rem;
+}
+
+.header .nav__btn {
+  background-color: white;
+  height: 2.95rem;
+  padding: 1.1% 3.9rem;
+  color: #00252e;
+  font-size: 14px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header .nav__btn:hover {
+  color: #808d99;
+}
+
+.hero {
+  height: 700px;
+  position: relative;
+  background-color: #ebfbff;
+  background-image: url("../../images/bg-hero-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero .container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  height: 26.5rem;
+  width: 88%;
+  margin: auto;
+}
+
+@media (min-width: 64em) {
+  .hero .container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    height: 26.5rem;
+    width: 88%;
+    margin: auto;
+  }
+}
+
+.hero__text {
+  align-self: center;
+  width: 87%;
+}
+
+.hero__text h1 {
+  font-family: "Poppins", sans-serif;
+  color: #00252e;
+  font-size: 2.4rem;
+  margin: 0px auto;
+}
+
+.hero__text p {
+  line-height: 1.6;
+  color: #00252e;
+  margin-bottom: 1.5rem;
+}
+
+.hero__btn {
+  background-color: #ff52bf;
+  padding: 14px 3.9rem;
+  color: white;
+  font-size: 14px;
+  margin: 1% auto;
+}
+
+.hero__image {
+  background-image: url("../../images/illustration-mockups.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
