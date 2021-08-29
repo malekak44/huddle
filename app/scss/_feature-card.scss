@@ -1,42 +1,83 @@
 .feature-cards-container {
-    max-width: 86vw;
-    margin: 9rem auto;
+    max-width: 90vw;
+    margin: 4rem auto;
+
+    @include breakpoint-up(medium) {
+        max-width: 86vw;
+        margin: 9rem auto;
+    }
 
     .feature-card {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 10px;
+        flex-direction: column;
+        border-radius: 1rem;
         margin-bottom: 2.5rem;
-        padding: 3rem 2rem 3rem 7rem;
+        padding: 3rem 20px 1rem;
         box-shadow: 0 0 10px rgba(154, 160, 185, 0.5);
+        
+        @include breakpoint-up(medium) {
+            border-radius: 10px;
+            flex-direction: row;
+            padding: 3rem 2rem 3rem 7rem;
+        }
 
         &-text {
             flex: 1;
+            text-align: center;
+
+            @include breakpoint-up(medium) {
+                text-align: left;
+            }
 
             h2 {
                 color: $veryDarkCyan;
                 margin-bottom: 0;
+                font-size: 1.2rem;
                 font-family: $heading-font-family;
+
+                @include breakpoint-up(medium) {
+                    font-size: 1.5em;
+                }
             }
 
             p {
                 line-height: 1.5;
                 color: $grayishBlue;
+                font-size: 0.9375rem;
+
+                @include breakpoint-up(medium) {
+                    font-size: 1.125rem;
+                }
             }
         }
 
         &-image {
             flex: 1;
+            order: -1;
             display: flex;
             justify-content: flex-end;
+            margin-bottom: 1rem;
+
+            @include breakpoint-up(medium) {
+                order: 0;
+                margin-bottom: 0;
+            }
 
             &:nth-child(1) {
                 display: block;
             }
 
             img {
-                width: 75%;
+                width: 90%;
+                display: block;
+                margin: auto;
+
+                @include breakpoint-up(medium) {
+                    width: 75%;
+                    display: inline;
+                }
             }
         }
     }

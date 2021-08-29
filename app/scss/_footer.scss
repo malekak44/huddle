@@ -1,18 +1,32 @@
 .footer {
     color: white;
-    padding: 12rem 0 3rem;
+    padding: 8rem 0 3rem;
     background: $veryDarkCyan;
 
+    @include breakpoint-up(medium) {
+        padding: 12rem 0 3rem;
+    }
+
     &__content {
-        width: 86vw;
+        width: 90vw;
         margin: auto;
-        display: grid;
+        display: block;
         grid-template-columns: 4fr 2fr 2fr 2fr;
+
+        @include breakpoint-up(medium) {
+            width: 86vw;
+            display: grid;
+        }
     }
 
     &__logo {
         margin-bottom: 1.5rem;
         margin-left: 6vw;
+        width: 10.75rem;
+
+        @include breakpoint-up(medium) {
+            width: auto;
+        }
     }
 
     &__desc {
@@ -21,10 +35,22 @@
         align-items: center;
 
         p {
-            width: 330px;
+            width: 18.7rem;
             font-size: 1rem;
             line-height: 1.7;
             color: $veryPaleCyan;
+
+            @include breakpoint-up(medium) {
+                width: 20.625rem;
+            }
+        }
+
+        img {
+            width: 1rem;
+
+            @include breakpoint-up(medium) {
+                width: auto;
+            }
         }
 
         .location-img {
@@ -52,6 +78,15 @@
 
     &__social {
         margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        @include breakpoint-up(medium) {
+            display: block;
+            margin-bottom: 0;
+        }
 
         svg {
             cursor: pointer;
@@ -64,14 +99,23 @@
             }
 
             &:not(:last-child) {
-                margin-right: 0.5rem;
+                margin-right: 1rem;
+
+                @include breakpoint-up(medium) {
+                    margin-right: 0.5rem;
+                }
             }
         }
     }
 
     &__copy {
-        text-align: right;
+        text-align: center;
         margin-right: 3vw;
-        font-size: 14.5px;
+        font-size: 0.875rem;
+
+        @include breakpoint-up(medium) {
+            font-size: 14.5px;
+            text-align: right;
+        }
     }
 }

@@ -1,24 +1,42 @@
 .ready-to-build {
-    width: 60vw;
+    width: 90vw;
     background: white;
     position: relative;
     text-align: center;
-    border-radius: 10px;
-    padding: 2rem 2rem 5rem;
-    margin: auto auto -6rem;
+    border-radius: 1rem;
+    padding: 1.5rem 0 3rem;
+    margin: auto auto -4rem;
     box-shadow: 0 0 10px rgba(154, 160, 185, 0.5);
 
+    @include breakpoint-up(medium) {
+        width: 60vw;
+        border-radius: 10px;
+        padding: 2rem 2rem 5rem;
+        margin: auto auto -6rem;
+    }
+
     h1 {
-        font-size: 1.9rem;
+        font-size: 1.0625rem;
         color: $veryDarkCyan;
-        margin-bottom: 4rem;
+        margin-bottom: 2.5rem;
         font-family: $heading-font-family;
+
+        @include breakpoint-up(medium) {
+            font-size: 1.9rem;
+            margin-bottom: 4rem;
+        }
     }
 
     .btn {
         color: white;
+        font-size: 0.9375rem;
         background: $pink;
         border-radius: 40px;
-        padding: 22px 105px;
+        padding: 0.75rem 2.5rem;
+
+        @include breakpoint-up(medium) {
+            font-size: 1rem;
+            padding: 1.375rem 6.5625rem;
+        }
     }
 }
