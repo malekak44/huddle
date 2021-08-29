@@ -1,59 +1,54 @@
 .hero {
-    height: 700px;
+    height: 650px;
     position: relative;
     background-color: $veryPaleCyan;
-    background-image: url('../../images/bg-hero-desktop.svg');
+    background-image: url('../images/bg-hero-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
 
-    .container {
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-auto-flow: column;
-        height: 26.5rem;
-        width: 88%;
-        margin: auto;
+    &__container {
+        max-width: 87vw;
+        height: 28rem;
+        margin: 1rem auto 0;
+        display: flex;
 
-        @include breakpoint-up(large) {
-            display: grid;
-            grid-auto-columns: 1fr;
-            grid-auto-flow: column;
-            height: 26.5rem;
-            width: 88%;
-            margin: auto;
-        }
+        @include breakpoint-up(large) {}
+    }
+
+    &__text__content {
+        align-self: center;
+        flex: 1;
     }
 
     &__text {
-        align-self: center;
-        width: 87%;
+        width: 86%;
 
         h1 {
             font-family: $heading-font-family;
             color: $veryDarkCyan;
-            font-size: 2.4rem;
-            margin: 0px auto;
+            font-size: 2.5rem;
+            margin: 0;
         }
 
         p {
             line-height: 1.6;
             color: $veryDarkCyan;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2.5rem;
         }
 
     }
 
     &__btn {
         background-color: $pink;
-        padding: 14px 3.9rem;
+        padding: 1rem 4rem;
         color: white;
-        font-size: 14px;
-        margin: 1% auto;
+        font-size: 0.875rem;
     }
 
     &__image {
-        background-image: url('../../images/illustration-mockups.svg');
-        background-size: 100%;
+        flex: 1;
+        background-image: url('../images/illustration-mockups.svg');
         background-repeat: no-repeat;
+        background-size: contain;
     }
 }

@@ -1,0 +1,43 @@
+.feature-cards-container {
+    max-width: 86vw;
+    margin: 9rem auto;
+
+    .feature-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 2.5rem;
+        padding: 3rem 2rem 3rem 7rem;
+        box-shadow: 0 0 10px rgba(154, 160, 185, 0.5);
+
+        &-text {
+            flex: 1;
+
+            h2 {
+                color: $veryDarkCyan;
+                margin-bottom: 0;
+                font-family: $heading-font-family;
+            }
+
+            p {
+                line-height: 1.5;
+                color: $grayishBlue;
+            }
+        }
+
+        &-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            &:nth-child(1) {
+                display: block;
+            }
+
+            img {
+                width: 75%;
+            }
+        }
+    }
+}

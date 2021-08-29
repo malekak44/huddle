@@ -1,1 +1,1 @@
-Huddle landing page with alternating feature blocks
+This is the Huddle landing page with alternating feature blocks.

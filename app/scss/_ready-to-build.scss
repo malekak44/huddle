@@ -1,0 +1,24 @@
+.ready-to-build {
+    width: 60vw;
+    background: white;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem 2rem 5rem;
+    margin: auto auto -6rem;
+    box-shadow: 0 0 10px rgba(154, 160, 185, 0.5);
+
+    h1 {
+        font-size: 1.9rem;
+        color: $veryDarkCyan;
+        margin-bottom: 4rem;
+        font-family: $heading-font-family;
+    }
+
+    .btn {
+        color: white;
+        background: $pink;
+        border-radius: 40px;
+        padding: 22px 105px;
+    }
+}
